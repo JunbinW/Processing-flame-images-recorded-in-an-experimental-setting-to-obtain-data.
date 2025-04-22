@@ -30,8 +30,6 @@ Tip: The format of binary image to use sould be like:
     ...
 
 
-
-
 data_export: 
 Scan binary images under path and export flame data to .csv file according to set parameters like distance and focus. The correction factor need to be calibrated by yourself, the relevant parameters are modified in the configuration file
 
