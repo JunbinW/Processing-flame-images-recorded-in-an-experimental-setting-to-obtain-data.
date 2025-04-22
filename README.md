@@ -1,4 +1,6 @@
 # Processing-flame-images-recorded-in-an-experimental-setting-to-obtain-data.
+## License  
+This project is licensed under the MIT License. See LICENSE for details.
 
 Generall:
 This project is a program for processing flame images recorded in an experimental setting to obtain data such as flame height and size in the video over time.
