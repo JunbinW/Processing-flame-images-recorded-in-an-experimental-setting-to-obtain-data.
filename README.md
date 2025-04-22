@@ -1,26 +1,34 @@
 # Processing-flame-images-recorded-in-an-experimental-setting-to-obtain-data.
+
 Generall:
 This project is a program for processing flame images recorded in an experimental setting to obtain data such as flame height and size in the video over time.
 
+
 ==================================================
+
 
 File description: 
 
 config.ini: 
 Configuration file, stores all parameters such as file path, the configuration file will be explained in detail.
 
+
 main:
 Command Window code, support for unified invocation of each function, easy to record traces of function usage (excluding automatic logging). And support for automatic initialization of configuration files (not tested).
+
 
 video_to_images: 
 Related parameters are edited in the configuration file.
 
+
 binarization: 
 Convert any image to a binary image using a specific algorithm or threshold (gray: 0|255), you can use the Ostu algorithm, Triangle algorithm, Fixed Threshold three modes, the threshold and other parameters are edited in the configuration file.
+
 
 noise_reduction: 
 Import and perform noise reduction on binary images under the path. Has a take sample noise reduction function: manually make a sample image and highlight the non-flame areas. The program will read the sample images from a specific directory and remove the non-flame areas from the image to be noise reduced. The noise reduction uses a sequence of operations, which can be edited in the configuration file.
 Tip: The format of binary image to use sould be like:
+
 
 
 ----binary_images
@@ -39,10 +47,13 @@ Tip: The format of binary image to use sould be like:
     ...
 
 
+
 data_export: 
 Scan binary images under path and export flame data to .csv file according to set parameters like distance and focus. The correction factor need to be calibrated by yourself, the relevant parameters are modified in the configuration file
 
+
 ==================================================
+
 
 config.ini description:
 
@@ -68,6 +79,7 @@ jpeg_quality = 95
 
 #Available when format is jpg or jepg
 
+
 [binarization]
 
 input_path = ./video_to_images
@@ -83,6 +95,7 @@ overwrite_existing = False
 threshold = 63
 
 #The threshold of the binarization, use -1 to apply OSTU Algorithm, use -2 to apply Triangle Algorithm.
+
 
 [noise_reduction]
 
@@ -117,6 +130,7 @@ i = 0, 2, 0, 2
 #k: structure elements, width first, then height, in contour drawing only take k1 
 
 #i: iteration count, not available in contour drawing
+
 
 [data_export]
 
