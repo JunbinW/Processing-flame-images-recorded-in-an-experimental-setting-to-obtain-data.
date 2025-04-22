@@ -1,4 +1,4 @@
-# Processing-flame-images-recorded-in-an-experimental-setting-to-obtain-data.
+# Processing-flame-videos-recorded-in-an-experimental-condition-into-data.
 ## License  
 This project is licensed under the MIT License. See LICENSE for details.
 
